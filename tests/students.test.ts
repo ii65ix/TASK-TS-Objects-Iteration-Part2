@@ -1,14 +1,15 @@
-const {
-  getStudentName,
-  getCourse,
+import {
+  Student,
   addCourseToStudent,
   countCourses,
-  removeCourseFromStudent,
   findStudentById,
-} = require("./objectIteration");
+  getCourse,
+  getStudentName,
+  removeCourseFromStudent,
+} from "../students";
 
-describe("Student Data Functions", () => {
-  let students;
+describe("Students", () => {
+  let students: Student[];
 
   beforeEach(() => {
     students = [

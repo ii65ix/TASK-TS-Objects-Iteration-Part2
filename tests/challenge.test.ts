@@ -1,7 +1,8 @@
-const { getStudentsByCourse, listAllCourses } = require("./objectIteration");
+import { getStudentsByCourse, listAllCourses } from "../challenge";
+import { Student } from "../students";
 
-xdescribe("🌶️🌶️🌶️ Challenges", () => {
-  let students;
+describe("🌶️🌶️🌶️ Challenges", () => {
+  let students: Student[];
 
   beforeEach(() => {
     students = [
