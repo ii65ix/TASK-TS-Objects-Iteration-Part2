@@ -1,21 +1,43 @@
+// don't delete this import statement
 import { Student } from "./students";
 
-// 🌶️🌶️
-// 7) Write a `getStudentsByCourse` function that accepts a `course` string and an array of student objects `students`,
-// then returns an array of student objects who are enrolled in the specified course
+/**
+ * 🌶️🌶️
+ * `getStudentsByCourse` function:
+ * - Accepts:
+ *   - A `students` array of type `Student[]`.
+ *   - A `course` parameter of type `string`.
+ * - Returns an array of student objects who are enrolled in the specified course.
+ * Example:
+ *  getStudentsByCourse(students, "Music");
+ *    // => [
+ *    //   { id: 3, name: "Charlie", courses: ["Science", "English", "Music"] },
+ *    //   { id: 5, name: "Eva", courses: ["Science", "Math", "Music"] },
+ *    //   { id: 7, name: "Grace", courses: ["Math", "Science", "English", "Music"] },
+ *    //   { id: 10, name: "Jack", courses: ["Math", "History", "Music"] }
+ *    // ]
+ */
 function getStudentsByCourse(students: Student[], course: string): Student[] {
   // write your code here...
-  return [];
-}
-// console.log(getStudentsByCourse(students, "Music"));
 
-// 🌶️🌶️🌶️
-// 8) Write a `listAllCourses` function that accepts an array of `students`
-// then returns an array of all unique courses names across all students
+  return []; // replace empty array with what you see is fit
+}
+
+/**
+ * 🌶️🌶️🌶️
+ * `listAllCourses` function:
+ * - Accepts:
+ *   - A `students` array of type `Student[]`.
+ * - Returns an array of all unique course names across all students.
+ * - The array should contain each course only once, with no duplicates.
+ * Example:
+ *  listAllCourses(students);
+ *    // => ["Math", "Science", "History", "English", "Art", "Music", "PE"]
+ */
 function listAllCourses(students: Student[]): string[] {
   // write your code here...
-  return [];
+
+  return []; // replace empty array with what you see is fit
 }
-// console.log(listAllCourses(students));
 
 export { getStudentsByCourse, listAllCourses };
