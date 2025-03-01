@@ -63,11 +63,11 @@ const students: Student[] = [
 ];
 
 /**
- * 1) Using `getStudentName` function:
+ * `getStudentName` function:
  * - Accepts a `student` parameter of type `Student`.
  * - Returns the student's name.
  * Example:
- * getStudentName(students[0]); // => "Alice"
+ *  getStudentName(students[0]); // => "Alice"
  */
 function getStudentName(student: Student): string {
   // write your code here...
@@ -76,13 +76,13 @@ function getStudentName(student: Student): string {
 }
 
 /**
- * 2) Using `getCourse` function:
+ * `getCourse` function:
  * - Accepts:
  *   - A `student` parameter of type `Student`.
  *   - A `courseIndex` parameter of type `number`.
  * - Returns the course at the specified index in the student's `courses` array.
  * Example:
- * getCourse(students[4], 2); // => "Music"
+ *  getCourse(students[4], 2); // => "Music"
  */
 function getCourse(student: Student, courseIndex: number): string {
   // write your code here...
@@ -91,15 +91,15 @@ function getCourse(student: Student, courseIndex: number): string {
 }
 
 /**
- * 3) Using `addCourseToStudent` function:
+ * `addCourseToStudent` function:
  * - Accepts:
  *   - A `student` parameter of type `Student`.
  *   - A `course` parameter of type `string`.
  * - Adds the new course to the student's `courses` array.
  * - Returns the updated student object.
  * Example:
- * addCourseToStudent(students[7], "Physics");
- * // => { id: 8, name: "Helen", courses: ["History", "Art", "PE", "Physics"] }
+ *  addCourseToStudent(students[7], "Physics");
+ *    // => { id: 8, name: "Helen", courses: ["History", "Art", "PE", "Physics"] }
  */
 function addCourseToStudent(student: Student, course: string): Student {
   // write your code here...
@@ -108,11 +108,11 @@ function addCourseToStudent(student: Student, course: string): Student {
 }
 
 /**
- * 4) Using `countCourses` function:
+ * `countCourses` function:
  * - Accepts a `student` parameter of type `Student`.
  * - Returns the number of courses the student is enrolled in.
  * Example:
- * countCourses(students[1]); // => 4
+ *  countCourses(students[1]); // => 4
  */
 function countCourses(student: Student): number {
   // write your code here...
@@ -121,15 +121,15 @@ function countCourses(student: Student): number {
 }
 
 /**
- * 5) Using `removeCourseFromStudent` function:
+ * `removeCourseFromStudent` function:
  * - Accepts:
  *   - A `student` parameter of type `Student`.
  *   - A `course` parameter of type `string`.
  * - Removes the course from the student's `courses` array.
  * - Returns the updated student object.
  * Example:
- * removeCourseFromStudent(students[6], "Science");
- * // => { id: 7, name: "Grace", courses: ["Math", "English", "Music"] }
+ *  removeCourseFromStudent(students[6], "Science");
+ *    // => { id: 7, name: "Grace", courses: ["Math", "English", "Music"] }
  */
 function removeCourseFromStudent(student: Student, course: string): Student {
   // write your code here...
@@ -138,19 +138,22 @@ function removeCourseFromStudent(student: Student, course: string): Student {
 }
 
 /**
- * 6) Using `findStudentById` function:
+ * `findStudentById` function:
  * - Accepts:
  *   - A `students` array of type `Student[]`.
  *   - A `studentId` parameter of type `number`.
  * - Searches for a student by ID in the `students` array.
  * - Returns the student object if found, otherwise returns `undefined`.
  * Example:
- * - findStudentById(students, 10);
- * // => { id: 10, name: "Jack", courses: ["Math", "History", "Music"] }
- * - findStudentById(students, 29);
- * // => undefined
+ *  - findStudentById(students, 10);
+ *      // => { id: 10, name: "Jack", courses: ["Math", "History", "Music"] }
+ *  - findStudentById(students, 29);
+ *      // => undefined
  */
-function findStudentById(students: Student[], studentId: number): Student | undefined {
+function findStudentById(
+  students: Student[],
+  studentId: number
+): Student | undefined {
   // write your code here...
 
   return undefined; // replace undefined with what you see is fit
