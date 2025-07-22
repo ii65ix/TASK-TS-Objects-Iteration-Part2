@@ -1,5 +1,5 @@
 // don't delete this import statement
-import { Student } from "./students";
+import { countCourses, Student } from "./students";
 
 /**
  * 🌶️🌶️
@@ -20,7 +20,7 @@ import { Student } from "./students";
 function getStudentsByCourse(students: Student[], course: string): Student[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  return students.filter(student => student.courses.includes(course));
 }
 
 /**
@@ -37,7 +37,8 @@ function getStudentsByCourse(students: Student[], course: string): Student[] {
 function listAllCourses(students: Student[]): string[] {
   // write your code here...
 
-  return []; // replace empty array with what you see is fit
+  const allCourses = students.flatMap(student => student.courses);
+  return Array.from(new Set(allCourses));
 }
 
 export { getStudentsByCourse, listAllCourses };

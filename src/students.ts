@@ -72,7 +72,7 @@ const students: Student[] = [
 function getStudentName(student: Student): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+  return student.name; // replace empty string with what you see is fit
 }
 
 /**
@@ -87,7 +87,8 @@ function getStudentName(student: Student): string {
 function getCourse(student: Student, courseIndex: number): string {
   // write your code here...
 
-  return ""; // replace empty string with what you see is fit
+
+  return student.courses[courseIndex]; // replace empty string with what you see is fit
 }
 
 /**
@@ -103,6 +104,7 @@ function getCourse(student: Student, courseIndex: number): string {
  */
 function addCourseToStudent(student: Student, course: string): Student {
   // write your code here...
+  student.courses.push(course); // Add the new course to the student's courses array
 
   return student;
 }
@@ -117,7 +119,7 @@ function addCourseToStudent(student: Student, course: string): Student {
 function countCourses(student: Student): number {
   // write your code here...
 
-  return -1; // replace -1 with what you see is fit
+  return student.courses.length; // replace -1 with what you see is fit
 }
 
 /**
@@ -133,8 +135,13 @@ function countCourses(student: Student): number {
  */
 function removeCourseFromStudent(student: Student, course: string): Student {
   // write your code here...
-
+  const index = student.courses.indexOf(course);
+  if (index !== -1) {
+    student.courses.splice(index, 1);
+  }
   return student;
+
+  
 }
 
 /**
@@ -155,6 +162,10 @@ function findStudentById(
   studentId: number
 ): Student | undefined {
   // write your code here...
+  const student = students.find(s => s.id === studentId);
+  if (student) {
+    return student; // Return the found student
+  }else
 
   return undefined; // replace undefined with what you see is fit
 }
